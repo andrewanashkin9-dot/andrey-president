@@ -5,212 +5,195 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Президентская программа на год — Андрей</title>
 <meta name="description" content="Программа кандидата в президенты школы: турниры и спорт, масштабная «Мафия», «Что? Где? Когда?», ящики жалоб и предложений. Честно про полномочия.">
-<meta name="theme-color" content="#c1272d">
+<meta name="theme-color" content="#7C8A18">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Президентская программа на год">
 <meta property="og:description" content="Турниры, «Мафия», «Что? Где? Когда?», ящики жалоб. И честно про то, на что президент школы влиять не может.">
 <meta property="og:locale" content="ru_RU">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%23c1272d'/%3E%3Cpath d='M50 10 61 37.5 90 37.5 66.5 55 75.5 84 50 66 24.5 84 33.5 55 10 37.5 39 37.5Z' fill='%23e3b84e'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%23fff'/%3E%3Cpath d='M50 18a32 32 0 1 0 0 64 32 32 0 0 0 0-64Zm0 16a16 16 0 1 1 0 32 16 16 0 0 1 0-32Z' fill='%23BBCA31'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=PT+Serif:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --paper:#efe3cb;
-  --paper-dk:#e2d1af;
-  --ink:#14110f;
-  --red:#c1272d;
-  --red-dk:#8d1a1f;
-  --gold:#c8952a;
-  --gold-lt:#e3b84e;
-  --cream:#f8f1df;
-  --hard:5px 5px 0 var(--ink);
-  --hard-lg:8px 8px 0 var(--ink);
+  /* palette lifted from the campaign logo */
+  --olive:#BBCA31;
+  --olive-dk:#7C8A18;
+  --olive-tint:#F6F9E5;
+  --green:#5AAA55;
+  --green-dk:#3B7A38;
+  --green-tint:#EDF6EC;
+  --brown:#835E31;
+  --brown-tint:#F7F1E8;
+
+  --ink:#26241D;
+  --muted:#6B6A5F;
+  --line:#E9EBDA;
+  --white:#fff;
+
+  --r-lg:26px;
+  --r-md:16px;
+  --r-sm:12px;
+  --r-pill:999px;
+
+  --sh:0 1px 2px rgba(38,36,29,.04), 0 6px 18px rgba(38,36,29,.06);
+  --sh-lg:0 2px 6px rgba(38,36,29,.05), 0 16px 38px rgba(38,36,29,.09);
 }
 
 *,*::before,*::after{box-sizing:border-box}
-
 html{-webkit-text-size-adjust:100%}
 
 body{
   margin:0;
-  font-family:"PT Serif",Georgia,"Times New Roman",serif;
+  font-family:"Nunito Sans",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
   font-size:17px;
   line-height:1.62;
   color:var(--ink);
-  background-color:var(--paper);
+  background:var(--white);
   overflow-x:hidden;
 }
 
-/* Aged-paper tint, pinned to the viewport. A fixed pseudo-element rather than
-   background-attachment:fixed, which iOS Safari silently ignores. */
-body::before{
-  content:"";
-  position:fixed;
-  inset:0;
-  z-index:-1;
-  pointer-events:none;
-  background-image:
-    radial-gradient(ellipse 70% 50% at 15% 8%, rgba(200,149,42,.22), transparent 60%),
-    radial-gradient(ellipse 60% 60% at 88% 72%, rgba(141,26,31,.14), transparent 62%),
-    radial-gradient(ellipse 90% 70% at 50% 108%, rgba(20,17,15,.10), transparent 65%);
-}
-
-/* Aged-paper grain, drawn inline — no network request */
-body::after{
-  content:"";
-  position:fixed;
-  inset:0;
-  z-index:200;
-  pointer-events:none;
-  opacity:.05;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
-}
-
-img{max-width:100%}
-[hidden]{display:none!important}
-
-h1,h2,h3,h4,.display{
-  font-family:Oswald,"Arial Narrow",Haettenschweiler,Impact,sans-serif;
-  font-weight:700;
-  text-transform:uppercase;
-  letter-spacing:.012em;
-  line-height:1.05;
+h1,h2,h3,h4{
+  font-family:Nunito,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-weight:800;
+  line-height:1.16;
+  letter-spacing:-.015em;
   margin:0;
 }
 
-p{margin:0 0 .85em}
+p{margin:0 0 .8em}
 p:last-child{margin-bottom:0}
-
-a{color:var(--red-dk)}
+img{max-width:100%}
+[hidden]{display:none!important}
 
 .wrap{
   width:100%;
-  max-width:760px;
+  max-width:840px;
   margin-inline:auto;
-  padding-inline:18px;
+  padding-inline:20px;
 }
 
-/* ─── Red star ─────────────────────────────────────────── */
-.star{
-  display:block;
-  flex:0 0 auto;
-  background:var(--gold-lt);
-  clip-path:polygon(50% 0%,61.8% 34.5%,98% 34.5%,69% 56%,79.5% 90.5%,50% 69.5%,20.5% 90.5%,31% 56%,2% 34.5%,38.2% 34.5%);
+/* ── Logo watermark ─────────────────────────────────────
+   Deliberately bled off the edge so only part of the mark
+   reads — it is a texture, not an illustration.          */
+.mark{
+  position:absolute;
+  width:auto;
+  pointer-events:none;
+  aspect-ratio:411/574;
 }
-.star--red{background:var(--red)}
-.star--ink{background:var(--ink)}
+.mark--hero{
+  top:-14%;
+  right:-40%;
+  height:150%;
+  opacity:.10;
+  color:#fff;
+}
+.mark--foot{
+  bottom:-42%;
+  left:-24%;
+  height:210%;
+  opacity:.11;
+  color:#fff;
+}
+.mark--body{
+  top:-90px;
+  right:-34%;
+  width:min(105vw,760px);
+  height:auto;
+  opacity:.055;
+}
 
-/* ─── Hero ─────────────────────────────────────────────── */
+/* ── Hero ───────────────────────────────────────────── */
 .hero{
   position:relative;
   overflow:hidden;
-  background:var(--red);
-  color:var(--cream);
-  border-bottom:6px solid var(--ink);
-  padding-top:calc(env(safe-area-inset-top,0px) + 40px);
-  padding-bottom:38px;
-}
-.hero::before{
-  content:"";
-  position:absolute;
-  top:-60vmax;
-  left:50%;
-  width:180vmax;
-  height:180vmax;
-  margin-left:-90vmax;
-  background:repeating-conic-gradient(from 0deg at 50% 50%,
-    rgba(227,184,78,.22) 0deg 6deg,
-    rgba(227,184,78,0) 6deg 13deg);
-  pointer-events:none;
-}
-.hero::after{
-  content:"";
-  position:absolute;
-  inset:0;
-  background:linear-gradient(to bottom, rgba(141,26,31,.28), rgba(141,26,31,0) 45%, rgba(141,26,31,.45));
-  pointer-events:none;
+  background:linear-gradient(152deg,#8A9A1C 0%,#6E8A22 38%,#41843A 100%);
+  color:#fff;
+  border-radius:0 0 var(--r-lg) var(--r-lg);
+  padding-top:calc(env(safe-area-inset-top,0px) + 44px);
+  padding-bottom:42px;
 }
 .hero .wrap{position:relative;z-index:2}
 
-.hero__star{
-  width:64px;
-  height:64px;
-  margin-bottom:20px;
-  filter:drop-shadow(4px 4px 0 var(--ink));
+/* White badge: the logo's own green leaf would otherwise sink into the
+   green hero gradient. */
+.hero__badge{
+  display:flex;
+  width:max-content;
+  align-items:center;
+  justify-content:center;
+  background:#fff;
+  border-radius:20px;
+  padding:13px 15px;
+  margin-bottom:22px;
+  box-shadow:0 8px 22px rgba(20,30,10,.2);
+}
+.hero__logo{
+  display:block;
+  width:42px;
+  aspect-ratio:411/574;
+  height:auto;
 }
 
-.hero__kicker{
+.hero__eyebrow{
   display:inline-block;
-  font-family:Oswald,"Arial Narrow",sans-serif;
-  font-weight:600;
+  font-family:Nunito,sans-serif;
+  font-weight:700;
+  font-size:.74rem;
+  letter-spacing:.14em;
   text-transform:uppercase;
-  font-size:.72rem;
-  letter-spacing:.2em;
-  background:var(--ink);
-  color:var(--gold-lt);
-  padding:7px 13px 6px;
-  margin-bottom:16px;
-  box-shadow:4px 4px 0 rgba(20,17,15,.35);
+  background:rgba(255,255,255,.18);
+  border:1px solid rgba(255,255,255,.28);
+  border-radius:var(--r-pill);
+  padding:7px 15px 6px;
+  margin-bottom:18px;
 }
 
 .hero h1{
-  font-size:clamp(2.6rem,12.5vw,4.6rem);
-  font-weight:700;
-  text-shadow:4px 4px 0 var(--ink);
-  margin-bottom:14px;
+  font-size:clamp(2.35rem,10.5vw,3.9rem);
+  letter-spacing:-.025em;
+  margin-bottom:16px;
 }
-.hero h1 em{
-  display:block;
-  font-style:normal;
-  color:var(--gold-lt);
-}
+.hero h1 em{font-style:normal;color:#EAF56A;display:block}
 
 .hero__lede{
-  font-size:1.06rem;
-  line-height:1.5;
-  max-width:36ch;
-  border-left:5px solid var(--gold-lt);
-  padding-left:14px;
-  margin-bottom:22px;
+  font-size:1.08rem;
+  line-height:1.55;
+  max-width:38ch;
+  color:rgba(255,255,255,.93);
+  margin-bottom:26px;
 }
-
-.hero__rule{
-  display:flex;
-  align-items:center;
-  gap:10px;
-  margin-bottom:22px;
-}
-.hero__rule span{height:5px;background:var(--gold-lt);flex:1}
-.hero__rule .star{width:18px;height:18px}
 
 .hero__name{
-  font-family:Oswald,"Arial Narrow",sans-serif;
-  font-weight:500;
+  display:inline-block;
+  font-family:Nunito,sans-serif;
+  font-weight:700;
+  font-size:.82rem;
+  letter-spacing:.1em;
   text-transform:uppercase;
-  letter-spacing:.14em;
-  font-size:.85rem;
-  color:var(--gold-lt);
+  color:rgba(255,255,255,.82);
+  border-top:1px solid rgba(255,255,255,.3);
+  padding-top:14px;
 }
 
-/* ─── Sticky anchor nav ────────────────────────────────── */
+/* ── Sticky nav ─────────────────────────────────────── */
 .navbar{
   position:sticky;
   top:0;
   z-index:100;
-  background:var(--ink);
-  border-bottom:5px solid var(--gold);
+  background:rgba(255,255,255,.92);
+  -webkit-backdrop-filter:blur(12px);
+  backdrop-filter:blur(12px);
+  border-bottom:1px solid var(--line);
 }
-/* Right-edge fade: the only cue on a phone that the strip scrolls sideways. */
 .navbar::after{
   content:"";
   position:absolute;
-  top:0;
-  bottom:0;
-  right:0;
-  width:44px;
+  top:0;bottom:0;right:0;
+  width:40px;
   pointer-events:none;
-  background:linear-gradient(to left, var(--ink) 18%, rgba(20,17,15,0));
+  background:linear-gradient(to left,#fff 22%,rgba(255,255,255,0));
 }
 .nav{
   overflow-x:auto;
@@ -219,420 +202,210 @@ a{color:var(--red-dk)}
   scrollbar-width:none;
 }
 .nav::-webkit-scrollbar{display:none}
-.nav ul{
-  display:flex;
-  margin:0;
-  padding:0;
-  list-style:none;
-  min-width:max-content;
-}
+.nav ul{display:flex;gap:7px;margin:0;padding:11px 20px;list-style:none;min-width:max-content}
 .nav a{
   display:block;
-  font-family:Oswald,"Arial Narrow",sans-serif;
-  font-weight:500;
-  text-transform:uppercase;
-  font-size:.79rem;
-  letter-spacing:.07em;
-  color:var(--paper);
+  font-family:Nunito,sans-serif;
+  font-weight:700;
+  font-size:.82rem;
+  color:var(--muted);
   text-decoration:none;
   white-space:nowrap;
-  padding:14px 15px 12px;
-  border-right:1px solid rgba(239,227,203,.18);
+  border-radius:var(--r-pill);
+  padding:8px 15px;
+  transition:background .15s,color .15s;
 }
-.nav li:first-child a{padding-left:18px}
-.nav li:last-child a{border-right:0;padding-right:18px}
-.nav a:hover,.nav a:focus-visible{background:var(--red);color:var(--cream)}
+.nav a:hover,.nav a:focus-visible{background:var(--olive-tint);color:var(--olive-dk)}
 
-/* ─── Sections ─────────────────────────────────────────── */
-.sec{padding:40px 0 4px;scroll-margin-top:56px}
-.sec:last-of-type{padding-bottom:12px}
+/* ── Section scaffolding ────────────────────────────── */
+.sec{position:relative;padding:46px 0 2px;scroll-margin-top:62px}
+.sec:last-of-type{padding-bottom:10px}
+.sec .wrap{position:relative;z-index:2}
+.sec__bg{position:absolute;inset:0;overflow:hidden;pointer-events:none;z-index:0}
 
-.sec__head{
-  position:relative;
-  background:var(--ink);
-  color:var(--cream);
-  border:4px solid var(--ink);
-  box-shadow:var(--hard);
-  padding:16px 16px 15px;
-  margin-bottom:26px;
+.sec-head{margin-bottom:24px}
+.eyebrow{
+  display:inline-block;
+  font-family:Nunito,sans-serif;
+  font-weight:700;
+  font-size:.72rem;
+  letter-spacing:.14em;
+  text-transform:uppercase;
+  color:var(--olive-dk);
+  background:var(--olive-tint);
+  border-radius:var(--r-pill);
+  padding:6px 13px 5px;
+  margin-bottom:13px;
+}
+.sec-head h2{font-size:clamp(1.8rem,7.5vw,2.6rem);margin-bottom:12px}
+.sec-head > p{color:var(--muted);font-size:1.02rem;max-width:58ch}
+
+/* ── Big content block ──────────────────────────────── */
+.block{
+  background:var(--white);
+  border:1px solid var(--line);
+  border-radius:var(--r-lg);
+  box-shadow:var(--sh);
   overflow:hidden;
+  margin-bottom:22px;
 }
-.sec__head::before{
-  content:"";
-  position:absolute;
-  top:0;bottom:0;right:0;
-  width:78px;
-  background:var(--red);
-  clip-path:polygon(34% 0,100% 0,100% 100%,0 100%);
-}
-.sec__num{
-  position:relative;
-  z-index:2;
-  display:flex;
-  align-items:center;
-  gap:9px;
-  font-family:Oswald,"Arial Narrow",sans-serif;
-  font-weight:600;
+.block__head{padding:24px 20px 20px;border-bottom:1px solid var(--line)}
+.block__head h3{font-size:1.28rem;margin-bottom:8px}
+.block__head p{color:var(--muted);font-size:.97rem;max-width:56ch}
+
+/* rows inside a block — one shared surface, hairline separated */
+.rows{list-style:none;margin:0;padding:0}
+.row{padding:20px;border-bottom:1px solid var(--line)}
+.row:last-child{border-bottom:0}
+.row h4{font-size:1.06rem;margin-bottom:6px}
+.row p{font-size:.97rem;color:#43413A}
+
+.when{
+  display:inline-block;
+  font-family:Nunito,sans-serif;
+  font-weight:700;
   font-size:.7rem;
-  letter-spacing:.22em;
-  color:var(--gold-lt);
-  margin-bottom:7px;
-}
-.sec__num .star{width:14px;height:14px}
-.sec__head h2{
-  position:relative;
-  z-index:2;
-  font-size:clamp(1.55rem,7vw,2.3rem);
-  max-width:12ch;
-}
-.sec__head p{
-  position:relative;
-  z-index:2;
-  margin-top:10px;
-  font-size:.95rem;
-  line-height:1.5;
-  color:rgba(248,241,223,.82);
-  max-width:46ch;
-}
-
-/* ─── Cards ────────────────────────────────────────────── */
-.grid{display:grid;gap:22px;margin-bottom:26px}
-
-.card{
-  position:relative;
-  background:var(--cream);
-  border:3px solid var(--ink);
-  box-shadow:var(--hard), inset 0 10px 0 var(--red);
-  padding:24px 17px 18px;
-}
-.card--gold{box-shadow:var(--hard), inset 0 10px 0 var(--gold)}
-.card--ink{
-  background:var(--ink);
-  color:var(--paper);
-  box-shadow:var(--hard), inset 0 10px 0 var(--gold);
-}
-.card--ink .card__when{background:var(--gold);color:var(--ink)}
-.card--ink h3{color:var(--cream)}
-
-.card__when{
-  display:inline-block;
-  font-family:Oswald,"Arial Narrow",sans-serif;
-  font-weight:600;
+  letter-spacing:.07em;
   text-transform:uppercase;
-  font-size:.68rem;
-  letter-spacing:.13em;
-  background:var(--ink);
-  color:var(--gold-lt);
-  padding:5px 10px 4px;
+  color:var(--olive-dk);
+  background:var(--olive-tint);
+  border-radius:var(--r-pill);
+  padding:5px 12px 4px;
   margin-bottom:10px;
+  white-space:nowrap;
 }
+.when--green{color:var(--green-dk);background:var(--green-tint)}
+.when--brown{color:var(--brown);background:var(--brown-tint)}
 
-.card h3{
-  font-size:1.32rem;
-  margin-bottom:9px;
-}
-.card p{font-size:.97rem;line-height:1.58}
-
-.card__flag{
+.tag{
   display:inline-block;
-  font-family:Oswald,"Arial Narrow",sans-serif;
-  font-weight:600;
+  font-family:Nunito,sans-serif;
+  font-weight:700;
+  font-size:.66rem;
+  letter-spacing:.06em;
   text-transform:uppercase;
-  font-size:.64rem;
-  letter-spacing:.12em;
-  color:var(--cream);
-  background:var(--red);
-  padding:4px 9px 3px;
-  margin-left:6px;
-  vertical-align:3px;
+  color:#fff;
+  background:var(--green);
+  border-radius:var(--r-pill);
+  padding:3px 10px 2px;
+  margin-left:8px;
+  vertical-align:2px;
 }
 
-/* bullet list inside cards */
-.ticks{list-style:none;margin:12px 0 0;padding:0}
-.ticks li{
+/* compact bullet list */
+.mini{list-style:none;margin:10px 0 0;padding:0}
+.mini li{
   position:relative;
-  padding-left:22px;
-  margin-bottom:9px;
-  font-size:.95rem;
+  padding-left:18px;
+  margin-bottom:6px;
+  font-size:.94rem;
   line-height:1.55;
+  color:#43413A;
 }
-.ticks li:last-child{margin-bottom:0}
-.ticks li::before{
+.mini li:last-child{margin-bottom:0}
+.mini li::before{
   content:"";
   position:absolute;
   left:0;
-  top:.52em;
-  width:11px;
-  height:11px;
-  background:var(--red);
-  clip-path:polygon(50% 0%,61.8% 34.5%,98% 34.5%,69% 56%,79.5% 90.5%,50% 69.5%,20.5% 90.5%,31% 56%,2% 34.5%,38.2% 34.5%);
+  top:.62em;
+  width:7px;height:7px;
+  border-radius:var(--r-pill);
+  background:var(--olive);
 }
-.card--ink .ticks li::before{background:var(--gold-lt)}
 
-/* ─── Sub-heading band ─────────────────────────────────── */
-.band{
-  display:flex;
-  align-items:center;
-  gap:11px;
-  background:var(--red);
-  color:var(--cream);
-  border:3px solid var(--ink);
-  box-shadow:var(--hard);
-  padding:11px 14px 10px;
-  margin:34px 0 22px;
-}
-.band .star{width:19px;height:19px;background:var(--gold-lt)}
-.band h3{font-size:1.02rem;letter-spacing:.06em;line-height:1.2}
-
-/* ─── Two-day / phase blocks ───────────────────────────── */
-.phase{
-  border:3px solid var(--ink);
-  background:var(--cream);
-  box-shadow:var(--hard);
-  margin-bottom:22px;
-}
-.phase__top{
-  display:flex;
-  align-items:baseline;
-  gap:10px;
-  background:var(--ink);
-  color:var(--gold-lt);
-  padding:11px 15px 10px;
-}
-.phase__top b{
-  font-family:Oswald,"Arial Narrow",sans-serif;
-  font-weight:700;
-  font-size:1.6rem;
-  line-height:1;
-  color:#e8474d;
-}
-.phase__top span{
-  font-family:Oswald,"Arial Narrow",sans-serif;
-  font-weight:500;
-  text-transform:uppercase;
-  letter-spacing:.11em;
-  font-size:.82rem;
-}
-.phase__body{padding:16px 15px 15px}
-.phase__body p{font-size:.97rem}
-
-/* ─── Stat row ─────────────────────────────────────────── */
-.stats{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:10px;
-  margin:16px 0 0;
-}
+/* ── Stat row ───────────────────────────────────────── */
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
 .stat{
-  border:3px solid var(--ink);
-  background:var(--paper-dk);
-  box-shadow:3px 3px 0 var(--ink);
-  padding:11px 7px 9px;
+  background:var(--olive-tint);
+  border-radius:var(--r-md);
+  padding:14px 8px 12px;
   text-align:center;
 }
 .stat b{
   display:block;
-  font-family:Oswald,"Arial Narrow",sans-serif;
-  font-weight:700;
-  font-size:1.62rem;
+  font-family:Nunito,sans-serif;
+  font-weight:800;
+  font-size:1.6rem;
   line-height:1;
-  color:var(--red-dk);
+  color:var(--olive-dk);
 }
 .stat span{
   display:block;
-  font-family:Oswald,"Arial Narrow",sans-serif;
-  font-weight:500;
-  text-transform:uppercase;
-  font-size:.6rem;
-  letter-spacing:.09em;
+  font-size:.74rem;
+  color:var(--muted);
   margin-top:5px;
-  line-height:1.25;
+  line-height:1.3;
 }
 
-/* ─── Timeline (ЧГК) ───────────────────────────────────── */
-.tl{list-style:none;margin:0;padding:0;position:relative}
-.tl::before{
-  content:"";
-  position:absolute;
-  left:5px;
-  top:8px;
-  bottom:8px;
-  width:3px;
-  background:var(--ink);
-}
-.tl li{
-  position:relative;
-  padding-left:26px;
-  margin-bottom:15px;
-}
-.tl li:last-child{margin-bottom:0}
-.tl li::before{
-  content:"";
-  position:absolute;
-  left:0;
-  top:.35em;
-  width:13px;
-  height:13px;
-  background:var(--red);
-  border:3px solid var(--ink);
-}
-.tl li:last-child::before{background:var(--gold-lt)}
-.tl b{
-  display:block;
-  font-family:Oswald,"Arial Narrow",sans-serif;
-  font-weight:600;
-  text-transform:uppercase;
-  font-size:.88rem;
-  letter-spacing:.05em;
-}
-.tl span{font-size:.93rem;line-height:1.5;display:block}
-.tl em{
-  font-style:normal;
-  font-family:Oswald,"Arial Narrow",sans-serif;
-  font-weight:500;
-  font-size:.7rem;
-  letter-spacing:.1em;
-  text-transform:uppercase;
-  background:var(--ink);
-  color:var(--gold-lt);
-  padding:3px 7px 2px;
-  margin-left:6px;
-  white-space:nowrap;
-}
-
-/* ─── Pull-quote / callout ─────────────────────────────── */
-.callout{
-  position:relative;
-  background:var(--ink);
-  color:var(--cream);
-  border:4px solid var(--ink);
-  box-shadow:var(--hard-lg);
-  padding:22px 17px 20px;
-  margin:30px 0 26px;
-  overflow:hidden;
-}
-.callout::before{
-  content:"";
-  position:absolute;
-  top:-38px;
-  right:-38px;
-  width:130px;
-  height:130px;
-  background:rgba(193,39,45,.55);
-  clip-path:polygon(50% 0%,61.8% 34.5%,98% 34.5%,69% 56%,79.5% 90.5%,50% 69.5%,20.5% 90.5%,31% 56%,2% 34.5%,38.2% 34.5%);
-}
-.callout > *{position:relative;z-index:2}
-.callout h3{
-  color:var(--gold-lt);
-  font-size:1.1rem;
-  letter-spacing:.06em;
-  margin-bottom:10px;
-}
-.callout p{font-size:1rem;line-height:1.6}
-
-.callout--paper{
-  background:var(--gold-lt);
-  color:var(--ink);
-}
-.callout--paper::before{background:rgba(193,39,45,.4)}
-.callout--paper h3{color:var(--red-dk)}
-
-/* ─── Honest / limits section ──────────────────────────── */
-.limit{
-  border:3px dashed var(--ink);
-  background:rgba(226,209,175,.5);
-  padding:17px 15px 15px;
+/* ── Tinted note ────────────────────────────────────── */
+.note{
+  border-radius:var(--r-lg);
+  padding:22px 20px;
   margin-bottom:22px;
+  background:var(--olive-tint);
+  border:1px solid #E3EBC2;
 }
-.limit h3{
-  font-size:1.1rem;
-  margin-bottom:9px;
-  display:flex;
-  align-items:center;
-  gap:9px;
-}
-.limit h3 .star{width:16px;height:16px;background:var(--red)}
-.limit p{font-size:.97rem}
+.note h3{font-size:1.1rem;margin-bottom:9px;color:var(--olive-dk)}
+.note p{font-size:.98rem;color:#43413A}
+.note--green{background:var(--green-tint);border-color:#D4E8D2}
+.note--green h3{color:var(--green-dk)}
+.note--brown{background:var(--brown-tint);border-color:#EADCC8}
+.note--brown h3{color:var(--brown)}
 
-/* ─── Footer ───────────────────────────────────────────── */
+/* dark emphasis block */
+.note--dark{
+  position:relative;
+  overflow:hidden;
+  background:linear-gradient(150deg,#3F4A12 0%,#2E5E2B 100%);
+  border:0;
+  color:#fff;
+}
+.note--dark > *{position:relative;z-index:2}
+.note--dark h3{color:#EAF56A}
+.note--dark p{color:rgba(255,255,255,.9)}
+
+/* ── Footer ─────────────────────────────────────────── */
 .foot{
   position:relative;
   overflow:hidden;
-  margin-top:44px;
-  background:var(--red);
-  color:var(--cream);
-  border-top:6px solid var(--ink);
-  text-align:center;
-  padding:40px 0 calc(env(safe-area-inset-bottom,0px) + 36px);
-}
-.foot::before{
-  content:"";
-  position:absolute;
-  top:50%;left:50%;
-  width:150vmax;height:150vmax;
-  margin:-75vmax 0 0 -75vmax;
-  background:repeating-conic-gradient(from 0deg at 50% 50%,
-    rgba(227,184,78,.18) 0deg 6deg,
-    rgba(227,184,78,0) 6deg 13deg);
-  pointer-events:none;
+  margin-top:48px;
+  background:linear-gradient(152deg,#8A9A1C 0%,#6E8A22 38%,#41843A 100%);
+  color:#fff;
+  border-radius:var(--r-lg) var(--r-lg) 0 0;
+  padding:46px 0 calc(env(safe-area-inset-bottom,0px) + 40px);
 }
 .foot .wrap{position:relative;z-index:2}
-.foot .star{
-  width:44px;height:44px;
-  margin:0 auto 16px;
-  filter:drop-shadow(3px 3px 0 var(--ink));
-}
-.foot h2{
-  font-size:clamp(1.5rem,7vw,2.1rem);
-  text-shadow:3px 3px 0 var(--ink);
-  margin-bottom:12px;
-}
-.foot p{
-  font-size:.98rem;
-  max-width:34ch;
-  margin-inline:auto;
-  opacity:.94;
-}
-.foot__rule{
-  display:flex;align-items:center;gap:10px;
-  max-width:200px;margin:20px auto 0;
-}
-.foot__rule span{height:4px;background:var(--gold-lt);flex:1}
-.foot__rule .star{width:15px;height:15px;margin:0;filter:none}
-
+.foot h2{font-size:clamp(1.55rem,6.5vw,2.2rem);margin-bottom:12px}
+.foot p{color:rgba(255,255,255,.9);max-width:40ch;margin-bottom:24px}
 .totop{
   display:inline-block;
-  margin-top:24px;
-  font-family:Oswald,"Arial Narrow",sans-serif;
-  font-weight:600;
-  text-transform:uppercase;
-  font-size:.74rem;
-  letter-spacing:.14em;
-  color:var(--ink);
-  background:var(--gold-lt);
+  font-family:Nunito,sans-serif;
+  font-weight:700;
+  font-size:.86rem;
+  color:var(--olive-dk);
+  background:#fff;
   text-decoration:none;
-  border:3px solid var(--ink);
-  box-shadow:4px 4px 0 var(--ink);
-  padding:10px 17px 9px;
+  border-radius:var(--r-pill);
+  padding:12px 24px;
+  box-shadow:0 6px 18px rgba(20,30,10,.18);
 }
-.totop:active{transform:translate(2px,2px);box-shadow:2px 2px 0 var(--ink)}
 
-/* ─── Tablet / desktop ─────────────────────────────────── */
-@media (min-width:700px){
+/* ── Tablet / desktop ───────────────────────────────── */
+@media (min-width:720px){
   body{font-size:18px}
-  .wrap{padding-inline:32px}
-  .hero{padding-top:calc(env(safe-area-inset-top,0px) + 66px);padding-bottom:58px}
-  .hero__star{width:84px;height:84px}
-  .hero__lede{font-size:1.16rem}
-  .sec{padding-top:58px;scroll-margin-top:60px}
-  .sec__head{padding:24px 24px 22px;box-shadow:var(--hard-lg)}
-  .sec__head::before{width:120px}
-  .grid--2{grid-template-columns:1fr 1fr}
-  .card{padding:28px 22px 22px}
-  .callout{padding:30px 26px 26px}
-  .phase__body{padding:22px 22px 20px}
-  .limit{padding:22px 22px 20px}
-  .foot{padding-top:60px}
+  .wrap{padding-inline:34px}
+  .hero{padding-top:calc(env(safe-area-inset-top,0px) + 72px);padding-bottom:64px;border-radius:0 0 40px 40px}
+  .hero__badge{padding:16px 19px;border-radius:24px}
+  .hero__logo{width:54px}
+  .sec{padding-top:64px;scroll-margin-top:66px}
+  .block{border-radius:30px;box-shadow:var(--sh-lg);margin-bottom:26px}
+  .block__head{padding:30px 30px 24px}
+  .row{padding:24px 30px;display:grid;grid-template-columns:168px 1fr;gap:22px;align-items:start}
+  .row--plain{display:block}
+  .when{margin-bottom:0}
+  .note{padding:28px 30px;border-radius:30px}
+  .foot{border-radius:40px 40px 0 0;padding-top:64px}
+  .mark--body{width:min(70vw,820px)}
 }
 
 @media (prefers-reduced-motion:no-preference){
@@ -642,16 +415,16 @@ a{color:var(--red-dk)}
 </head>
 <body>
 
+<svg width="0" height="0" style="position:absolute;overflow:hidden" aria-hidden="true" focusable="false"><symbol id="pear" viewBox="0 0 411 574" fill-rule="evenodd"><path fill="#BBCA31" d="M240.0,572.5L203.0,572.5L170.0,566.5L140.0,555.5L104.0,533.5L76.5,507.0L56.5,478.0L41.5,442.0L34.5,407.0L34.5,370.0L43.5,329.0L50.5,311.0L62.5,288.0L86.5,251.0L91.0,248.5L154.5,285.0L129.5,320.0L121.5,336.0L115.5,354.0L112.5,373.0L113.5,403.0L118.5,421.0L131.5,446.0L149.0,465.5L167.0,478.5L191.0,488.5L213.0,492.5L239.0,491.5L263.0,485.5L283.0,475.5L295.0,466.5L306.5,455.0L317.5,440.0L326.5,421.0L331.5,401.0L331.5,371.0L322.5,339.0L311.5,318.0L298.5,299.0L284.5,283.0L274.5,267.0L265.5,246.0L260.5,223.0L254.5,211.0L243.0,199.5L231.0,194.5L216.0,193.5L200.0,199.5L161.5,123.0L179.0,109.5L191.0,103.5L210.0,97.5L227.0,95.5L248.0,97.5L267.0,104.5L278.0,111.5L291.5,125.0L297.5,134.0L305.5,152.0L313.5,190.0L323.5,214.0L339.5,239.0L362.5,266.0L378.5,288.0L394.5,317.0L404.5,345.0L409.5,375.0L408.5,413.0L401.5,445.0L386.5,480.0L364.5,511.0L335.0,537.5L304.0,555.5L278.0,565.5L240.0,572.5Z"/><path fill="#5AAA55" d="M204.0,278.5L0.5,167.0L6.5,158.0L88.0,62.5L90.5,64.0L117.5,114.0L202.5,273.0L204.0,278.5Z"/><path fill="#835E31" d="M239.0,93.5L222.5,92.0L222.5,72.0L224.5,60.0L232.5,36.0L239.5,23.0L248.5,11.0L261.0,-0.5L278.0,10.5L280.5,14.0L266.5,28.0L250.5,53.0L242.5,74.0L239.0,93.5Z"/></symbol><symbol id="pear-mono" viewBox="0 0 411 574" fill-rule="evenodd"><path fill="currentColor" d="M240.0,572.5L203.0,572.5L170.0,566.5L140.0,555.5L104.0,533.5L76.5,507.0L56.5,478.0L41.5,442.0L34.5,407.0L34.5,370.0L43.5,329.0L50.5,311.0L62.5,288.0L86.5,251.0L91.0,248.5L154.5,285.0L129.5,320.0L121.5,336.0L115.5,354.0L112.5,373.0L113.5,403.0L118.5,421.0L131.5,446.0L149.0,465.5L167.0,478.5L191.0,488.5L213.0,492.5L239.0,491.5L263.0,485.5L283.0,475.5L295.0,466.5L306.5,455.0L317.5,440.0L326.5,421.0L331.5,401.0L331.5,371.0L322.5,339.0L311.5,318.0L298.5,299.0L284.5,283.0L274.5,267.0L265.5,246.0L260.5,223.0L254.5,211.0L243.0,199.5L231.0,194.5L216.0,193.5L200.0,199.5L161.5,123.0L179.0,109.5L191.0,103.5L210.0,97.5L227.0,95.5L248.0,97.5L267.0,104.5L278.0,111.5L291.5,125.0L297.5,134.0L305.5,152.0L313.5,190.0L323.5,214.0L339.5,239.0L362.5,266.0L378.5,288.0L394.5,317.0L404.5,345.0L409.5,375.0L408.5,413.0L401.5,445.0L386.5,480.0L364.5,511.0L335.0,537.5L304.0,555.5L278.0,565.5L240.0,572.5Z"/><path fill="currentColor" d="M204.0,278.5L0.5,167.0L6.5,158.0L88.0,62.5L90.5,64.0L117.5,114.0L202.5,273.0L204.0,278.5Z"/><path fill="currentColor" d="M239.0,93.5L222.5,92.0L222.5,72.0L224.5,60.0L232.5,36.0L239.5,23.0L248.5,11.0L261.0,-0.5L278.0,10.5L280.5,14.0L266.5,28.0L250.5,53.0L242.5,74.0L239.0,93.5Z"/></symbol></svg>
+
 <header class="hero">
+  <svg class="mark mark--hero" aria-hidden="true"><use href="#pear-mono"/></svg>
   <div class="wrap">
-    <div class="star hero__star" aria-hidden="true"></div>
-    <span class="hero__kicker">Кандидат в президенты школы</span>
+    <span class="hero__badge"><svg class="hero__logo" viewBox="0 0 411 574" aria-hidden="true"><use href="#pear"/></svg></span>
+    <span class="hero__eyebrow">Кандидат в президенты школы</span>
     <h1>Программа<em>на год</em></h1>
     <p class="hero__lede">Только зрелищные форматы, честный календарь и три ящика, через которые можно реально менять школьный быт.</p>
-    <div class="hero__rule" aria-hidden="true">
-      <span></span><div class="star"></div><span></span>
-    </div>
-    <p class="hero__name">Андрей &middot; выборы президента школы</p>
+    <span class="hero__name">Андрей · выборы президента школы</span>
   </div>
 </header>
 
@@ -671,117 +444,112 @@ a{color:var(--red-dk)}
 
   <!-- ═══ 1. ТУРНИРЫ И СПОРТ ═══════════════════════════ -->
   <section class="sec" id="sport">
+    <div class="sec__bg"><svg class="mark mark--body" aria-hidden="true"><use href="#pear"/></svg></div>
     <div class="wrap">
-      <div class="sec__head">
-        <div class="sec__num"><div class="star" aria-hidden="true"></div>Раздел 01</div>
-        <h2>Турниры и&nbsp;спорт</h2>
+      <div class="sec-head">
+        <span class="eyebrow">Раздел 01</span>
+        <h2>Турниры и спорт</h2>
         <p>Календарь на весь год: каждый месяц есть событие, которого ждут. Дивизионы по возрасту — везде, где играют разные параллели.</p>
       </div>
 
-      <div class="grid grid--2">
-
-        <article class="card">
-          <span class="card__when">Раз в 2 месяца</span>
-          <h3>Brawl Stars<span class="card__flag">5–10 класс</span></h3>
-          <p>Дивизионы обязательно: 5–6, 7–8, 9–10 — иначе исход предсказуем и младшие теряют интерес после первого раунда.</p>
-          <ul class="ticks">
-            <li>6 турниров за год</li>
-            <li>Ротация формата к весне: соло → командный режим, чтобы не приелось</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <span class="card__when">Сентябрь — декабрь</span>
-          <h3>Волейбол по классам</h3>
-          <p>Класс = готовая команда, не нужно набирать игроков отдельно.</p>
-          <ul class="ticks">
-            <li>Формат мини-лиги: групповой этап + плей-офф</li>
-            <li>Дивизионы по возрасту обязательны</li>
-          </ul>
-        </article>
-
-        <article class="card card--ink">
-          <span class="card__when">Январь — февраль</span>
-          <h3>Баскетбол по классам<span class="card__flag">Флагман года</span></h3>
-          <p>Самый массовый и ожидаемо самый популярный вид — многие умеют играть. Финал становится самым крупным спортивным событием года.</p>
-          <ul class="ticks">
-            <li>Полноценный командный формат, отдельно от 1&nbsp;на&nbsp;1 — разная механика и разный дух турнира, не смешивать</li>
-            <li>Мини-лига: групповой этап + плей-офф</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <span class="card__when">Март — май</span>
-          <h3>Футбол по классам</h3>
-          <p>На улице по сезону или мини-футбол в зале, если своя площадка не позволяет — уточнить по факту.</p>
-          <ul class="ticks">
-            <li>Тот же формат мини-лиги</li>
-          </ul>
-        </article>
-
-        <article class="card card--gold">
-          <span class="card__when">Ежеквартально</span>
-          <h3>Баскетбол 1&nbsp;на&nbsp;1 «Последний у кольца»</h3>
-          <p>Короткий, лёгкий, часто повторяющийся формат для заполнения пауз между сезонами командных видов.</p>
-          <ul class="ticks">
-            <li>Элиминационная сетка (double-elimination)</li>
-            <li>Фиксированное время: до 11 очков или 5 минут</li>
-            <li>Дивизионы по возрасту, айдентика в элиминационном стиле — считывается сразу</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <span class="card__when">Периодически</span>
-          <h3>Армрестлинг</h3>
-          <p>Простой инвентарь — стол. Судейство понятное без объяснений. Хорошо ложится как «разминочное» мероприятие между крупными спортивными сезонами и закрывает паузы в календаре.</p>
-        </article>
-
-        <article class="card card--gold">
-          <span class="card__when">Раз в четверть</span>
-          <h3>Дискотека</h3>
-          <p>Привязана к естественной точке: конец четверти или финал крупного турнира этого периода — продолжение эмоций от события, а не мероприятие с нуля.</p>
-          <ul class="ticks">
-            <li>Диджей не обязателен: заранее собранный плейлист + кто-то из команды переключает треки</li>
-            <li>Если приживётся «битва плейлистов на переменах» — оттуда естественно найдётся постоянный человек</li>
-            <li>Согласование с администрацией сразу с конкретикой: дата, длительность, ответственный, порядок</li>
-          </ul>
-        </article>
-
-        <article class="card">
-          <span class="card__when">Периодически</span>
-          <h3>Битва мемов и контента</h3>
-          <p>Конкурс на лучший мем или видео про школьную жизнь в соцсетях, голосование учеников. Нулевой бюджет, разлетается органически, даёт постоянный контент.</p>
-        </article>
-
+      <div class="block">
+        <div class="block__head">
+          <h3>Спортивный календарь</h3>
+          <p>Крупные командные сезоны идут друг за другом, а короткие форматы закрывают паузы между ними.</p>
+        </div>
+        <ul class="rows">
+          <li class="row">
+            <span class="when">Раз в 2 месяца</span>
+            <div>
+              <h4>Brawl Stars<span class="tag">5–10 класс</span></h4>
+              <p>Дивизионы обязательно: 5–6, 7–8, 9–10 — иначе исход предсказуем и младшие теряют интерес после первого раунда. 6 турниров за год, ротация формата к весне: соло → командный режим, чтобы не приелось.</p>
+            </div>
+          </li>
+          <li class="row">
+            <span class="when">Сентябрь — декабрь</span>
+            <div>
+              <h4>Волейбол по классам</h4>
+              <p>Класс = готовая команда, не нужно набирать игроков отдельно. Формат мини-лиги: групповой этап + плей-офф, дивизионы по возрасту обязательны.</p>
+            </div>
+          </li>
+          <li class="row">
+            <span class="when when--green">Январь — февраль</span>
+            <div>
+              <h4>Баскетбол по классам<span class="tag">Флагман года</span></h4>
+              <p>Самый массовый и ожидаемо самый популярный вид — многие умеют играть. Полноценный командный формат, отдельно от 1&nbsp;на&nbsp;1: разная механика и разный дух турнира, не смешивать. Мини-лига с групповым этапом и плей-офф, финал — самое крупное спортивное событие года.</p>
+            </div>
+          </li>
+          <li class="row">
+            <span class="when">Март — май</span>
+            <div>
+              <h4>Футбол по классам</h4>
+              <p>На улице по сезону или мини-футбол в зале, если своя площадка не позволяет — уточнить по факту. Тот же формат мини-лиги.</p>
+            </div>
+          </li>
+          <li class="row">
+            <span class="when">Ежеквартально</span>
+            <div>
+              <h4>Баскетбол 1 на 1 — «Последний у кольца»</h4>
+              <p>Короткий, лёгкий, часто повторяющийся формат для заполнения пауз между сезонами командных видов.</p>
+              <ul class="mini">
+                <li>Элиминационная сетка (double-elimination)</li>
+                <li>Фиксированное время: до 11 очков или 5 минут</li>
+                <li>Дивизионы по возрасту, айдентика в элиминационном стиле — считывается сразу</li>
+              </ul>
+            </div>
+          </li>
+          <li class="row">
+            <span class="when">Периодически</span>
+            <div>
+              <h4>Армрестлинг</h4>
+              <p>Простой инвентарь — стол. Судейство понятное без объяснений. Хорошо ложится как «разминочное» мероприятие между крупными спортивными сезонами и закрывает паузы в календаре.</p>
+            </div>
+          </li>
+          <li class="row">
+            <span class="when">Раз в четверть</span>
+            <div>
+              <h4>Дискотека</h4>
+              <p>Привязана к естественной точке: конец четверти или финал крупного турнира этого периода — продолжение эмоций от события, а не мероприятие с нуля.</p>
+              <ul class="mini">
+                <li>Диджей не обязателен: заранее собранный плейлист + кто-то из команды переключает треки</li>
+                <li>Если приживётся «битва плейлистов на переменах» — оттуда естественно найдётся постоянный человек</li>
+                <li>Согласование с администрацией сразу с конкретикой: дата, длительность, ответственный, порядок</li>
+              </ul>
+            </div>
+          </li>
+          <li class="row">
+            <span class="when">Периодически</span>
+            <div>
+              <h4>Битва мемов и контента</h4>
+              <p>Конкурс на лучший мем или видео про школьную жизнь в соцсетях, голосование учеников. Нулевой бюджет, разлетается органически, даёт постоянный контент.</p>
+            </div>
+          </li>
+        </ul>
       </div>
 
-      <div class="band">
-        <div class="star" aria-hidden="true"></div>
-        <h3>Механики поверх турниров</h3>
-      </div>
-      <p style="margin-bottom:22px">Это не отдельные события — они усиливают всё остальное и склеивают разрозненный календарь в одну историю.</p>
-
-      <div class="grid grid--2">
-        <article class="card">
-          <h3>Драфт капитанов</h3>
-          <p>Перед каждым крупным командным турниром — публичный «драфт»: капитаны по очереди выбирают игроков в команду. Элемент шоу как в НБА, разогревает интерес до самого турнира.</p>
-        </article>
-        <article class="card">
-          <h3>Ставки и прогнозы</h3>
-          <p>Перед каждым турниром ученики «ставят» баллы на победителя. У кого прогнозы точнее за год — тот получает приз. Вовлекает даже тех, кто сам не играет, а только смотрит.</p>
-        </article>
-        <article class="card">
-          <h3>Табло рекордов школы</h3>
-          <p>Постоянно обновляемая доска или экран с текущими рекордами по всем турнирам: дольше всех в армрестлинге, больше очков в баскет-лиге и так далее. Превращает разовые события в накопительную историю.</p>
-        </article>
-        <article class="card card--ink">
-          <h3>Рейтинг классов</h3>
-          <p>Единая турнирная таблица, куда стекаются очки со всех соревнований сразу — баскетбол, волейбол, футбол, армрестлинг, киберспорт.</p>
-          <ul class="ticks">
-            <li>Финал года — «самый спортивный класс» и общий приз</li>
-            <li>Люди болеют за свой класс даже в турнирах, где сами не участвуют</li>
-          </ul>
-        </article>
+      <div class="block">
+        <div class="block__head">
+          <h3>Механики поверх турниров</h3>
+          <p>Это не отдельные события — они усиливают всё остальное и склеивают разрозненный календарь в одну историю.</p>
+        </div>
+        <ul class="rows">
+          <li class="row row--plain">
+            <h4>Драфт капитанов</h4>
+            <p>Перед каждым крупным командным турниром — публичный «драфт»: капитаны по очереди выбирают игроков в команду. Элемент шоу как в НБА, разогревает интерес до самого турнира.</p>
+          </li>
+          <li class="row row--plain">
+            <h4>Ставки и прогнозы</h4>
+            <p>Перед каждым турниром ученики «ставят» баллы на победителя. У кого прогнозы точнее за год — тот получает приз. Вовлекает даже тех, кто сам не играет, а только смотрит.</p>
+          </li>
+          <li class="row row--plain">
+            <h4>Табло рекордов школы</h4>
+            <p>Постоянно обновляемая доска или экран с текущими рекордами по всем турнирам: дольше всех в армрестлинге, больше очков в баскет-лиге и так далее. Превращает разовые события в накопительную историю, за которой следят весь год.</p>
+          </li>
+          <li class="row row--plain">
+            <h4>Рейтинг классов</h4>
+            <p>Единая турнирная таблица, куда стекаются очки со всех соревнований сразу — баскетбол, волейбол, футбол, армрестлинг, киберспорт. Финал года — «самый спортивный класс» и общий приз. Люди болеют за свой класс даже в турнирах, где сами не участвуют.</p>
+          </li>
+        </ul>
       </div>
     </div>
   </section>
@@ -789,126 +557,160 @@ a{color:var(--red-dk)}
   <!-- ═══ 2. МАФИЯ ════════════════════════════════════ -->
   <section class="sec" id="mafia">
     <div class="wrap">
-      <div class="sec__head">
-        <div class="sec__num"><div class="star" aria-hidden="true"></div>Раздел 02</div>
+      <div class="sec-head">
+        <span class="eyebrow">Раздел 02</span>
         <h2>Масштабная «Мафия»</h2>
         <p>Двухдневный флагманский формат для 9–11 классов. Единственный формат в программе, построенный на социальной драме и напряжении, а не на физической активности или киберспорте — закрывает совершенно другую аудиторию, чем турниры.</p>
       </div>
 
-      <div class="callout callout--paper">
+      <div class="note note--green">
         <h3>Заявочный принцип</h3>
         <p>Играют только те, кто реально подал заявку и хочет участвовать, — не вся параллель поголовно.</p>
       </div>
 
-      <div class="phase">
-        <div class="phase__top"><b>01</b><span>День 1 — отбор</span></div>
-        <div class="phase__body">
-          <p>10 групп по 12 человек, один модератор из команды на группу — идеально совпадает с составом команды из десяти человек. В каждой группе — несколько партий мафии подряд за день.</p>
-          <div class="stats">
-            <div class="stat"><b>10</b><span>групп</span></div>
-            <div class="stat"><b>120</b><span>участников</span></div>
-            <div class="stat"><b>30</b><span>финалистов</span></div>
-          </div>
-          <ul class="ticks">
-            <li>Очко за победу своей команды (мирные или мафия) в раунде</li>
-            <li>Дополнительное очко за звание MVP раунда — выбирает модератор или голосование самих игроков, кто сыграл убедительнее всех</li>
-            <li>Итоговая сумма очков за все раунды дня определяет 3 финалистов от группы</li>
-          </ul>
+      <div class="block">
+        <div class="block__head">
+          <h3>Как устроены два дня</h3>
+          <p>Первый день отбирает финалистов, второй превращает финал в шоу с антуражем.</p>
         </div>
+        <ul class="rows">
+          <li class="row">
+            <span class="when">День 1 — отбор</span>
+            <div>
+              <h4>10 групп, несколько партий подряд</h4>
+              <p>10 групп по 12 человек, один модератор из команды на группу — идеально совпадает с составом команды из десяти человек. В каждой группе несколько партий мафии подряд за день, финалисты определяются по гибридной системе очков.</p>
+              <ul class="mini">
+                <li>Очко за победу своей команды (мирные или мафия) в раунде</li>
+                <li>Дополнительное очко за звание MVP раунда — выбирает модератор или голосование самих игроков, кто сыграл убедительнее всех</li>
+                <li>Итоговая сумма очков за все раунды дня определяет 3 финалистов от группы</li>
+              </ul>
+              <div class="stats">
+                <div class="stat"><b>10</b><span>групп</span></div>
+                <div class="stat"><b>120</b><span>участников</span></div>
+                <div class="stat"><b>30</b><span>финалистов</span></div>
+              </div>
+            </div>
+          </li>
+          <li class="row">
+            <span class="when when--green">День 2 — финал</span>
+            <div>
+              <h4>Три игры по 10 человек</h4>
+              <p>30 финалистов делятся на 3 игры по 10 человек. Пока играет одна группа, остальные финалисты и зрители наблюдают — рассадка амфитеатром вокруг игровой зоны удерживает внимание на весь день, а не только у играющих в моменте. Модераторы первого дня переквалифицируются в техническую команду антуража: свет, звук, ведущий.</p>
+            </div>
+          </li>
+        </ul>
       </div>
 
-      <div class="phase">
-        <div class="phase__top"><b>02</b><span>День 2 — финал с антуражем</span></div>
-        <div class="phase__body">
-          <p>30 финалистов делятся на 3 игры по 10 человек. Пока играет одна группа, остальные финалисты и зрители наблюдают — рассадка амфитеатром вокруг игровой зоны удерживает внимание на весь день, а не только у играющих в моменте.</p>
+      <div class="block">
+        <div class="block__head">
+          <h3>Антураж финала</h3>
+          <p>То, что превращает школьную «Мафию» в событие, на которое приходят смотреть.</p>
         </div>
-      </div>
-
-      <div class="band">
-        <div class="star" aria-hidden="true"></div>
-        <h3>Антураж финала</h3>
-      </div>
-
-      <div class="grid grid--2">
-        <article class="card">
-          <h3>«Домики»</h3>
-          <p>Картонные или тканевые ширмы на лёгком каркасе перед каждым игроком, раскрашенные под фасад дома. Полукруг лицом к центру днём, задвигаются или гаснет свет над рядом на ночной фазе — физически честнее закрытых глаз и визуально драматичнее.</p>
-        </article>
-        <article class="card">
-          <h3>Переход день — ночь</h3>
-          <p>Гонг или тревожная музыка на ночь, спокойная на день. Приглушённый общий свет с точечным освещением над активными домами.</p>
-        </article>
-        <article class="card card--ink">
-          <h3>«Объявление произошедшего»</h3>
-          <p>Не сухая констатация, а короткая инсценировка: гаснет свет над домом выбывшего, звуковой эффект, ведущий зачитывает с театральными паузами как в детективе. Самый сильный драматический момент дня.</p>
-        </article>
-        <article class="card">
-          <h3>Суд</h3>
-          <p>Обвиняемый выходит в центр, остальные остаются за домами — визуально понятно всем, кто под подозрением.</p>
-        </article>
-      </div>
-
-      <div class="callout">
-        <h3>Команда переходит из дня в день</h3>
-        <p>Модераторы дня 1 на день 2 переквалифицируются в техническую команду антуража: свет, звук, ведущий.</p>
+        <ul class="rows">
+          <li class="row row--plain">
+            <h4>«Домики»</h4>
+            <p>Картонные или тканевые ширмы на лёгком каркасе перед каждым игроком, раскрашенные под фасад дома. Полукруг лицом к центру днём, задвигаются или гаснет свет над рядом на ночной фазе — физически честнее закрытых глаз и визуально драматичнее.</p>
+          </li>
+          <li class="row row--plain">
+            <h4>Переход день — ночь</h4>
+            <p>Гонг или тревожная музыка на ночь, спокойная на день. Приглушённый общий свет с точечным освещением над активными домами.</p>
+          </li>
+          <li class="row row--plain">
+            <h4>«Объявление произошедшего»</h4>
+            <p>Не сухая констатация, а короткая инсценировка: гаснет свет над домом выбывшего, звуковой эффект, ведущий зачитывает с театральными паузами как в детективе. Самый сильный драматический момент дня.</p>
+          </li>
+          <li class="row row--plain">
+            <h4>Суд</h4>
+            <p>Обвиняемый выходит в центр, остальные остаются за домами — визуально понятно всем, кто под подозрением.</p>
+          </li>
+        </ul>
       </div>
     </div>
   </section>
 
   <!-- ═══ 3. ЧТО? ГДЕ? КОГДА? ═════════════════════════ -->
   <section class="sec" id="chgk">
+    <div class="sec__bg"><svg class="mark mark--body" aria-hidden="true"><use href="#pear"/></svg></div>
     <div class="wrap">
-      <div class="sec__head">
-        <div class="sec__num"><div class="star" aria-hidden="true"></div>Раздел 03</div>
+      <div class="sec-head">
+        <span class="eyebrow">Раздел 03</span>
         <h2>«Что? Где? Когда?»</h2>
         <p>Два события за год для средней и старшей школы. Интеллектуальный формат закрывает аудиторию, которой не заходят ни спорт, ни киберспорт, ни социальные игры вроде «Мафии». Не лига — качество вопросов важнее частоты.</p>
       </div>
 
-      <div class="grid grid--2">
-        <article class="card">
-          <span class="card__when">Состав</span>
-          <h3>7 команд по 4 человека</h3>
-          <div class="stats">
-            <div class="stat"><b>7</b><span>команд</span></div>
-            <div class="stat"><b>4</b><span>человека</span></div>
-            <div class="stat"><b>28</b><span>участников</span></div>
-          </div>
-          <ul class="ticks">
-            <li><b>Средняя школа:</b> 5 параллелей (5, 6, 7, 8, 9 класс), по 4 человека от параллели — 5 команд</li>
-            <li><b>Старшая школа:</b> 10 и 11 класс, в каждой параллели по 2 класса, от каждого класса по 2 человека — 2 команды</li>
-          </ul>
-        </article>
-
-        <article class="card card--gold">
-          <span class="card__when">Календарь</span>
-          <h3>Октябрь — ноябрь и март — апрель</h3>
-          <ul class="ticks">
-            <li>Первое событие не пересекается по вниманию с волейбольным сезоном</li>
-            <li>Второе идёт параллельно с футбольным сезоном — разная аудитория, конкуренции за внимание нет</li>
-            <li>Второе событие с элементом преемственности: защита титула чемпионом осени, реванш для не дошедших до финала</li>
-          </ul>
-        </article>
+      <div class="block">
+        <div class="block__head">
+          <h3>Команды и календарь</h3>
+          <p>Состав фиксированный и собирается по параллелям, а оба события разнесены так, чтобы не конкурировать за внимание со спортивными сезонами.</p>
+        </div>
+        <ul class="rows">
+          <li class="row">
+            <span class="when">Состав</span>
+            <div>
+              <h4>7 команд по 4 человека</h4>
+              <ul class="mini">
+                <li><b>Средняя школа:</b> 5 параллелей (5, 6, 7, 8, 9 класс), по 4 человека от параллели — 5 команд</li>
+                <li><b>Старшая школа:</b> 10 и 11 класс, в каждой параллели по 2 класса, от каждого класса по 2 человека — 2 команды</li>
+              </ul>
+              <div class="stats">
+                <div class="stat"><b>7</b><span>команд</span></div>
+                <div class="stat"><b>4</b><span>человека</span></div>
+                <div class="stat"><b>28</b><span>участников</span></div>
+              </div>
+            </div>
+          </li>
+          <li class="row">
+            <span class="when when--green">Два события</span>
+            <div>
+              <h4>Октябрь — ноябрь и март — апрель</h4>
+              <ul class="mini">
+                <li>Первое событие не пересекается по вниманию с волейбольным сезоном</li>
+                <li>Второе идёт параллельно с футбольным сезоном — разная аудитория, конкуренции за внимание нет</li>
+                <li>Второе событие с элементом преемственности: защита титула чемпионом осени, реванш для не дошедших до финала</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
       </div>
 
-      <div class="band">
-        <div class="star" aria-hidden="true"></div>
-        <h3>Формат одного дня</h3>
+      <div class="block">
+        <div class="block__head">
+          <h3>Формат одного дня</h3>
+          <p>Накопительный счёт, а не выбывание — чтобы все 7 команд играли до конца, а не сидели выбывшими.</p>
+        </div>
+        <ul class="rows">
+          <li class="row">
+            <span class="when">20 минут</span>
+            <div><h4>Открытие</h4><p>Объяснение правил, представление команд.</p></div>
+          </li>
+          <li class="row">
+            <span class="when">40–45 минут</span>
+            <div><h4>Раунд 1</h4><p>12–15 вопросов, минута на обсуждение, письменный ответ.</p></div>
+          </li>
+          <li class="row">
+            <span class="when">10 минут</span>
+            <div><h4>Перерыв</h4></div>
+          </li>
+          <li class="row">
+            <span class="when">40–45 минут</span>
+            <div><h4>Раунд 2</h4><p>12–15 вопросов, сложнее первого.</p></div>
+          </li>
+          <li class="row">
+            <span class="when">15 минут</span>
+            <div><h4>Подсчёт очков</h4></div>
+          </li>
+          <li class="row">
+            <span class="when when--brown">Если нужно</span>
+            <div><h4>Блиц-раунд</h4><p>5 быстрых вопросов на скорость реакции — только если разрыв между топ-командами близкий.</p></div>
+          </li>
+          <li class="row">
+            <span class="when when--green">15–20 минут</span>
+            <div><h4>Награждение</h4></div>
+          </li>
+        </ul>
       </div>
-      <p style="margin-bottom:22px">Накопительный счёт, а не выбывание — чтобы все 7 команд играли до конца, а не сидели выбывшими.</p>
 
-      <div class="card" style="margin-bottom:26px">
-        <ol class="tl">
-          <li><b>Открытие<em>20 мин</em></b><span>Объяснение правил, представление команд</span></li>
-          <li><b>Раунд 1<em>40–45 мин</em></b><span>12–15 вопросов, минута на обсуждение, письменный ответ</span></li>
-          <li><b>Перерыв<em>10 мин</em></b></li>
-          <li><b>Раунд 2<em>40–45 мин</em></b><span>12–15 вопросов, сложнее первого</span></li>
-          <li><b>Подсчёт очков<em>15 мин</em></b></li>
-          <li><b>Блиц-раунд<em>если нужно</em></b><span>5 быстрых вопросов на скорость реакции — только если разрыв между топ-командами близкий</span></li>
-          <li><b>Награждение<em>15–20 мин</em></b></li>
-        </ol>
-      </div>
-
-      <div class="callout">
+      <div class="note">
         <h3>Единый язык мероприятий</h3>
         <p>Гонг на «время вышло» — тот же приём, что в «Мафии»: единый визуальный и звуковой язык между мероприятиями программы. Капитаны совещаются шёпотом и дают письменный ответ, ведущий держит паузу перед раскрытием правильного ответа.</p>
       </div>
@@ -918,68 +720,82 @@ a{color:var(--red-dk)}
   <!-- ═══ 4. ЯЩИКИ ════════════════════════════════════ -->
   <section class="sec" id="boxes">
     <div class="wrap">
-      <div class="sec__head">
-        <div class="sec__num"><div class="star" aria-hidden="true"></div>Раздел 04</div>
+      <div class="sec-head">
+        <span class="eyebrow">Раздел 04</span>
         <h2>Ящики</h2>
         <p>Инструменты влияния на реальные условия — это не мероприятия. Отдельная категория от развлекательного календаря: не требует организации ивентов, не нагружает команду логистикой, работает фоном. Единая система «Ящик X» — узнаваемый бренд внутри программы, а не три разрозненные инициативы.</p>
       </div>
 
-      <div class="grid grid--2">
-        <article class="card">
-          <span class="card__when">Раз в 2 месяца</span>
-          <h3>Ящик продовольственных жалоб</h3>
-          <p>Анонимный опрос о столовой: что нравится, что нет, что хотелось бы видеть в меню. По итогам — конкретное предложение администрации или поварам об одном изменении.</p>
-        </article>
+      <div class="block">
+        <div class="block__head">
+          <h3>Три ящика</h3>
+          <p>У всех трёх одна механика: собрал обращения — вынес администрации одно конкретное предложение за раз.</p>
+        </div>
+        <ul class="rows">
+          <li class="row">
+            <span class="when">Раз в 2 месяца</span>
+            <div>
+              <h4>Ящик продовольственных жалоб</h4>
+              <p>Анонимный опрос о столовой: что нравится, что нет, что хотелось бы видеть в меню. По итогам — конкретное предложение администрации или поварам об одном изменении.</p>
+            </div>
+          </li>
+          <li class="row">
+            <span class="when">Раз в 2 месяца</span>
+            <div>
+              <h4>Ящик бытовых жалоб</h4>
+              <p>Анонимный опрос по инфраструктуре: раздевалки, туалеты, температура и освещение в кабинетах. Та же механика — собрал жалобы, вынес одно конкретное предложение за раз, не пытаясь решить всё сразу.</p>
+            </div>
+          </li>
+          <li class="row">
+            <span class="when when--green">Постоянно</span>
+            <div>
+              <h4>Ящик пожеланий</h4>
+              <p>Открытый постоянный канал — ящик или чат — для любых предложений и жалоб, не попадающих в две категории выше. Раз в месяц-два я от своего имени как президент выношу администрации 1–2 самых частых пункта, явно указывая, что это мнение многих — это даёт вес голосам, которые иначе потерялись бы поодиночке.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
 
-        <article class="card">
-          <span class="card__when">Раз в 2 месяца</span>
-          <h3>Ящик бытовых жалоб</h3>
-          <p>Анонимный опрос по инфраструктуре: раздевалки, туалеты, температура и освещение в кабинетах. Та же механика — собрал жалобы, вынес одно конкретное предложение за раз, не пытаясь решить всё сразу.</p>
-        </article>
-
-        <article class="card card--gold">
-          <span class="card__when">Постоянно</span>
-          <h3>Ящик пожеланий</h3>
-          <p>Открытый постоянный канал — ящик или чат — для любых предложений и жалоб, не попадающих в две категории выше.</p>
-          <ul class="ticks">
-            <li>Раз в месяц-два я от своего имени как президент выношу администрации 1–2 самых частых пункта</li>
-            <li>Явно указываю, что это мнение многих — это даёт вес голосам, которые иначе потерялись бы поодиночке</li>
-          </ul>
-        </article>
-
-        <article class="card card--ink">
-          <h3>Зачем это в программе</h3>
-          <p>Все три ящика — козырь против конкурентов, которые обещают только праздники: они показывают, что программа решает настоящие проблемы, а не только развлекает.</p>
-        </article>
+      <div class="note note--dark">
+        <svg class="mark mark--foot" aria-hidden="true"><use href="#pear-mono"/></svg>
+        <h3>Зачем это в программе</h3>
+        <p>Все три ящика — козырь против конкурентов, которые обещают только праздники: они показывают, что программа решает настоящие проблемы, а не только развлекает.</p>
       </div>
     </div>
   </section>
 
   <!-- ═══ 5. ЧЕСТНО ПРО ПОЛНОМОЧИЯ ════════════════════ -->
   <section class="sec" id="powers">
+    <div class="sec__bg"><svg class="mark mark--body" aria-hidden="true"><use href="#pear"/></svg></div>
     <div class="wrap">
-      <div class="sec__head">
-        <div class="sec__num"><div class="star" aria-hidden="true"></div>Раздел 05</div>
+      <div class="sec-head">
+        <span class="eyebrow">Раздел 05</span>
         <h2>Честно про полномочия</h2>
         <p>Что президент школы может сделать на самом деле, а что — нет. Без обещаний, которые невозможно выполнить.</p>
       </div>
 
-      <div class="limit">
-        <h3><div class="star" aria-hidden="true"></div>На учебный процесс повлиять нельзя</h3>
-        <p>На саму программу и содержание уроков президент школы повлиять не может. Поэтому все три ящика сознательно ограничены логистикой и бытом вокруг учёбы, а не её содержанием — обещать обратное было бы враньём.</p>
+      <div class="block">
+        <div class="block__head">
+          <h3>Границы и как с ними работать</h3>
+          <p>Программа построена вокруг того, на что влиять действительно можно.</p>
+        </div>
+        <ul class="rows">
+          <li class="row row--plain">
+            <h4>На учебный процесс повлиять нельзя</h4>
+            <p>На саму программу и содержание уроков президент школы повлиять не может. Поэтому все три ящика сознательно ограничены логистикой и бытом вокруг учёбы, а не её содержанием — обещать обратное было бы враньём.</p>
+          </li>
+          <li class="row row--plain">
+            <h4>Один конкретный вопрос за раз</h4>
+            <p>Механика ящиков устроена так специально: собрал жалобы — вынес администрации одно конкретное предложение, а не список из двадцати пунктов. Так шанс, что вопрос реально решится, кратно выше.</p>
+          </li>
+          <li class="row row--plain">
+            <h4>Согласования — с конкретикой</h4>
+            <p>Любое мероприятие идёт к администрации сразу с датой, длительностью, ответственным и порядком проведения, а не абстрактным запросом. Это разница между «нам отказали» и «нам согласовали».</p>
+          </li>
+        </ul>
       </div>
 
-      <div class="limit">
-        <h3><div class="star" aria-hidden="true"></div>Один конкретный вопрос за раз</h3>
-        <p>Механика ящиков устроена так специально: собрал жалобы — вынес администрации одно конкретное предложение, а не список из двадцати пунктов. Так шанс, что вопрос реально решится, кратно выше.</p>
-      </div>
-
-      <div class="limit">
-        <h3><div class="star" aria-hidden="true"></div>Согласования — с конкретикой</h3>
-        <p>Любое мероприятие идёт к администрации сразу с датой, длительностью, ответственным и порядком проведения, а не абстрактным запросом. Это разница между «нам отказали» и «нам согласовали».</p>
-      </div>
-
-      <div class="callout">
+      <div class="note note--brown">
         <h3>Флагманский пункт — если получится реализовать</h3>
         <p><b>Shark Tank для школы:</b> ученики питчат идеи перед жюри за приз или поддержку реализации. Уникальность в том, что в жюри реально можно позвать предпринимателя с реальным именем — козырь, который физически не может повторить ни один конкурент, потому что такого контакта у них нет.</p>
         <p>Реалистичность — согласие человека и разрешение администрации — стоит уточнить до того, как обещать это в кампании. Если не срастётся, в публичные обещания это не войдёт.</p>
@@ -990,13 +806,10 @@ a{color:var(--red-dk)}
 </main>
 
 <footer class="foot">
+  <svg class="mark mark--foot" aria-hidden="true"><use href="#pear-mono"/></svg>
   <div class="wrap">
-    <div class="star" aria-hidden="true"></div>
     <h2>Программа, которую видно</h2>
     <p>Зрелищные форматы весь год, честный разговор о полномочиях и три ящика, через которые школу можно менять по-настоящему.</p>
-    <div class="foot__rule" aria-hidden="true">
-      <span></span><div class="star"></div><span></span>
-    </div>
     <a class="totop" href="#sport">К началу программы</a>
   </div>
 </footer>
